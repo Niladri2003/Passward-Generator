@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passward Generator</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Josefin+Sans&display=swap');
+  </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+
+        <!-- header app name -->
+        <div class="heading">
+            <h1>PASSWARD <span>GENERATOR</span></h1>
+        </div>
+
+        <!-- display section -->
+
+        <div class="display-container">
+            <input readonly placeholder="Passward" class="display" data-passwardDisplay>
+
+            <button>
+                <span data-copyMsg></span>
+                <img src="copy-regular.svg" alt="copy image">
+            </button>
+        </div>
+
+        <!-- length section -->
+        
+        <div class="input-container">
+
+            <div class="length-container">
+                <p>Passward Length</p>
+                <p data-lengthNumber>10</p>
+            </div>
+
+            <!-- slider -->
+
+            <input type="range" min="1" max="20" step="1" data-lengthSlider class="slider-line">
+
+            <!-- checkboxes -->
+
+            <div class="checker">
+                <input type="checkbox" id="uppercase" class="first">
+                <label for="uppercase">Includes uppercase letter</label>
+            </div>
+
+            <div class="checker">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes lowercase letter</label>
+            </div>
+
+            <div class="checker">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes numbers </label>
+            </div>
+
+            <div class="checker" class="last-checker">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes symbols </label>
+            </div>
+
+            <!-- strength indicator section -->
+
+            <div class="strength-container">
+                <p>strength</p>
+                <div data-indicator class="light"></div>
+            </div>
+
+            <!-- generate button -->
+
+            <button class="generateButton">Generate Passward</button>
+        </div>
+        <div class="footer">
+            <p>Designed by Arnab Pal</p>
+        </div>
+    </div>
+
+    <!-- javascript link -->
+    <script src="script.js"></script>
+</body>
+</html>
