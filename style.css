@@ -90,6 +90,7 @@ body{
 .generateButton:hover{
     background :#fff;
     box-shadow: 0 12px 16px 0 rgba(4, 150, 74, 0.24), 0 17px 50px 0 rgba(69, 167, 116, 0.19);
+    cursor: pointer;
 }
 .footer{
     margin-top: 19px;

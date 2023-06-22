@@ -8,6 +8,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Josefin+Sans&display=swap');
   </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="bulb.jpg" type="image/x-icon" >
 </head>
 <body>
     
@@ -24,9 +25,9 @@
         <div class="display-container">
             <input readonly placeholder="Passward" class="display" data-passwardDisplay>
 
-            <button>
+            <button data-copy>
                 <span data-copyMsg></span>
-                <img src="copy-regular.svg" alt="copy image">
+                <img src="copy-regular.svg" alt="copy image" class="photo">
             </button>
         </div>
 
@@ -36,7 +37,7 @@
 
             <div class="length-container">
                 <p>Passward Length</p>
-                <p data-lengthNumber>10</p>
+                <p data-lengthNumber>0</p>
             </div>
 
             <!-- slider -->
@@ -81,7 +82,7 @@
         </div>
     </div>
 
-    <!-- javascript link -->
+    <!-- javascript added  link -->
     <script src="script.js"></script>
 </body>
 </html>
